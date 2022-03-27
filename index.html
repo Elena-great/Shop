@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <title>Sweets and Joys</title>
+  <link rel="icon" href="data:,">
+</head>
+<body>
+
+  <audio id="myAudio" src="assets/The_Choco_Boys_-_Chocolate_Choco_Choco_(musmore.com).mp3" loop="loop" autoplay="allowed"></audio>
+
+
+  <div class="heading">
+    <h1>The pastry is opening soon!</h1>
+  </div>
+
+  <div class="onplay">
+  <button id="myButton" class="play"><img src="assets/icons8-music-heart-64.png" alt="Play button"></button>
+  </div>
+
+  <div class="container_time">
+
+    <div class="pastry">
+      <div class="block">
+        <h5 class="days"></h5>
+        <h4>DAYS</h4>
+      </div>
+    </div>
+
+    <div class="pastry">
+      <div class="block">
+        <h5 class="hours"></h5>
+        <h4>HOURS</h4>
+      </div>
+    </div>
+
+    <div class="pastry">
+      <div class="block">
+        <h5 class="minutes"></h5>
+        <h4>MINUTES</h4>
+      </div>
+    </div>
+
+    <div class="pastry">
+      <div class="block">
+        <h5 class="seconds"></h5>
+        <h4>SECONDS</h4>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="header">
+    <h2>Sweets and Joys!</h2>
+  </div>
+
+  <div class="container">
+
+    <div class="item one">
+      <h3>Cake</h3>
+      <p class="par">A delicious cake for any of your holidays</p>
+      <p class="price">150$ / kilo</p>
+    </div>
+
+    <div class="item two">
+      <h3>Macaroon</h3>
+      <p class="par">Delicate French macarons stand on top of each other with a pink ribbon on a white background.</p>
+      <p class="price">100$ / set</p>
+    </div>
+
+    <div class="item three">
+      <h3>Lemon pie</h3>
+      <p class="par">The pie as your grandmother cooked</p>
+      <p class="price">100$ / kilo</p>
+    </div>
+
+    <div class="item four">
+      <h3>Donuts</h3>
+      <p class="par">Donuts halo’ed with fruits and flowers. Whatever could be better?</p>
+      <p class="price">100$ / set</p>
+    </div>
+
+    <div class="item five">
+      <h3>Mousse cake</h3>
+      <p class="par">Little jars make for great single servings, especially when topped with macerated strawberries.</p>
+      <p class="price">150$ / set</p>
+    </div>
+
+    <div class="item six">
+      <h3>Viennese waffles</h3>
+      <p class="par">Waffles, blueberries and maple syrup for breakfast / brunch</p>
+      <p class="price">50$ / for two persons</p>
+    </div>
+  </div>
+
+  <div class="header">
+    <h2>Send us a message!</h2>
+  </div>
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mayvopqg"
+  method="POST"
+>
+<div class="header">
+  <label>
+    YOUR EMAIL:
+    <input class="text-input" type="email" name="email" placeholder="Your email..." required="">
+  </label>
+  </div>
+
+  <div class="header">
+  <label>
+    YOUR MESSAGE:
+    <textarea class="text-input" name="message" placeholder="Type your message.." required=""></textarea>
+  </label>
+  </div>
+  <br>
+  <!-- your other form fields go here -->
+  <div class="header">
+  <button class="btn" type="submit">Send</button>
+  </div>
+</form>
+  <script src="index.js"></script>
+</body>
+</html>

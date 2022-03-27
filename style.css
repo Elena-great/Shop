@@ -1,0 +1,256 @@
+body {
+  background-color: #CCD1E4;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: #DB6B97;
+  font-size: 30px;
+  font-family: 'Courgette', cursive;
+  border: none;
+  width: 200px;
+}
+
+.container {
+  display: flex;
+}
+
+.container_time {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  color:#DB6B97;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 60px;
+  background-color: #EFEFEF;
+}
+
+h2 {
+  font-family: 'Courgette', cursive;
+  font-size: 50px;
+}
+
+h3 {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  background-color: #EFEFEF;
+  opacity: 0;
+}
+
+h4 {
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+}
+
+.item {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Courgette', cursive;
+  flex: 1;
+  margin: 5px;
+  position: relative;
+}
+
+label {
+  font-size: 30px;
+}
+
+.onplay{
+  display: flex;
+  justify-content: center;
+}
+
+.par {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  background-color: #EFEFEF;
+  opacity: 0;
+}
+
+.pastry {
+  background-color: #EFEFEF;
+  height: 250px;
+  width: 200px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: 3px solid grey;
+}
+
+.pink {
+  font-family: 'Courgette', cursive;
+  font-size: 60px;
+  border: none;
+  color:#DB6B97;
+}
+
+.play {
+  border: none;
+  height: 150px;
+  width: 150px;
+  background-color:#CCD1E4;
+}
+
+.price {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background-color: #EFEFEF;
+  opacity: 0;
+}
+
+.selected {
+  flex: 4;
+}
+
+.selected h3 {
+  font-size: 40px;
+  transition: all 0.8s ease-in;
+  opacity: 1;
+}
+
+.selected .par {
+  font-size: 25px;
+  transition: all 0.8s ease-in;
+  opacity: 1;
+}
+
+.selected .price {
+  font-size: 40px;
+  transition: all 0.8s ease-in;
+  opacity: 1;
+}
+
+.text-input {
+  background-color: #CCD1E4;
+  font-size: 20px;
+  font-family: 'Courgette', cursive;
+  border: none;
+  padding: 12px 20px;
+
+}
+
+.one {
+  background-image: url('assets/cake.jpg');
+}
+
+.two {
+  background-image: url('assets/macaroon.jpg');
+}
+
+.three {
+  background-image: url('assets/lemon_pie.jpg');
+}
+
+.four {
+  background-image: url('assets/donuts.jpg');
+}
+
+.five {
+  background-image: url('assets/mousse.jpg');
+}
+
+.six {
+  background-image: url('assets/waffles.jpg');
+}
+
+@media all and (max-width:1024px) {
+
+  .container {
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
+    
+  h1, h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    top: 10px;
+    left: 10px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 20px;
+  }
+
+  label {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .selected h3 {
+    font-size: 20px;
+  }
+
+  .selected .par {
+    font-size: 12px;
+  }
+
+  .selected .price {
+    font-size: 18px;
+  }
+
+  .pastry{
+    height: 100px;
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .par {
+    top: 80px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .price {
+    bottom: 10px;
+    left: 10px;
+  }
+
+} 
